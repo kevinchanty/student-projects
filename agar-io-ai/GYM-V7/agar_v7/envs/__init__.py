@@ -1,0 +1,1 @@
+from agar_v7.envs.agar_v7 import agarv7

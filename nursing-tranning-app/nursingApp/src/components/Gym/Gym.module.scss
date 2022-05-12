@@ -1,0 +1,29 @@
+
+.cardHeader {
+    display: flex;
+    text-align: end;
+    padding: 0;
+
+}
+
+.buttonGroup {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cardGroup {
+    margin-inline: auto;
+}
+
+.gymModal {
+    overflow-y: scroll;
+}
+
+.itemName {
+    text-align: center;
+}
+
+.userDetails {
+    text-align: center;
+}

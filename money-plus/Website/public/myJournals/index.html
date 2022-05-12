@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav-bar Test</title>
+    <!-- Google Fonts (Witillium Web all weight)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap v5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <script defer src="https://kit.fontawesome.com/acf2e97ce6.js" crossorigin="anonymous"></script>
+
+    <!-- Own Tag -->
+    <link rel="stylesheet" href="index.css">
+    <script defer type="module" src="index.js"></script>
+</head>
+
+<body>
+    <div class="sidebar active">
+        <ul class="nav_list">
+            <li>
+                <a href="#">
+                    <i class="fas fa-search"></i>
+                    <input type="text" name="" value="" placeholder="Search...">
+                </a>
+            </li>
+
+            <li>
+                <a href="/home/">
+                    <i class="fas fa-chart-line"></i>
+                    <span class="links_name">Dashboard</span>
+                </a>
+                <span class="tooltip">Dashboard</span>
+            </li>
+            <li>
+                <a href="/myJournals/">
+                    <i class="fas fa-book"></i>
+                    <span class="links_name">Journals</span>
+                </a>
+                <span class="tooltip">Journals</span>
+            </li>
+            <li>
+                <a href="/newTxn/">
+                    <i class="fas fa-money-check-alt"></i>
+                    <span class="links_name">New Transactions</span>
+                </a>
+                <span class="tooltip">New Transactions</span>
+            </li>
+            <li>
+                <a href="/Calendar/">
+                    <i class="far fa-calendar-alt"></i>
+                    <span class="links_name">Calendar</span>
+                </a>
+                <span class="tooltip">Calendar</span>
+            </li>
+            <li>
+                <a href="/notifications/">
+                    <i class="fas fa-bell"></i>
+                    <span class="links_name">Notifications</span>
+                </a>
+                <span class="tooltip">Notifications</span>
+            </li>
+            <li>
+                <a href="/gameoflife">
+                    <i class="fas fa-gamepad"></i>
+                    <span class="links_name">Game of Life</span>
+                </a>
+                <span class="tooltip">Game of Life</span>
+            </li>
+            <div class="sidebar-bottom">
+                <div class="bottom-pond" id="hide">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </ul>
+    </div>
+
+    <!-- Topbar -->
+    <div class="topbar">
+        <div class="logo_content">
+            <div class="logo">
+                <i class="fas fa-wallet"></i>
+                <h1>Money Plus</h1>
+            </div>
+        </div>
+        <div>
+
+        </div>
+        <div class="icons-ponds">
+            <div class="profile2">
+                <div class="profile_details2">
+                    <!-- <img src="../src/profile-pic/Edgar Gaming.png" alt="">
+                    <div class="profile-tag">
+                        <div class="name2">Edgar</div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="icons noti">
+                <i class="fas fa-bell"></i>
+                <span class="noti-popup">
+                    <h3 class="noti-popup-title">
+                        Notifications
+                    </h3>
+                    <div class="noti-ponds">
+                        <div class="noti-cards">
+                            <div>
+                              <div class="tag">Joined New User</div>
+                              <div class="title"><b>Registration: Finibus Bonorum et Malorum</b></div>
+                              <i class="far fa-clock"></i>24 Nov 2018 at 9:30p.m.
+                            </div>
+                          </div>
+                        <div class="noti-cards">
+                            <div>
+                              <div class="tag">Joined New User</div>
+                              <div class="title"><b>Registration: Finibus Bonorum et Malorum</b></div>
+                              <i class="far fa-clock"></i>24 Nov 2018 at 9:30p.m.
+                            </div>
+                          </div>
+                        <div class="noti-cards">
+                            <div>
+                              <div class="tag">Joined New User</div>
+                              <div class="title"><b>Registration: Finibus Bonorum et Malorum</b></div>
+                              <i class="far fa-clock"></i>24 Nov 2018 at 9:30p.m.
+                            </div>
+                          </div>
+                    </div>
+                </span>
+            </div>
+            <div class="icons log_out" id="log_out">
+                <i class="fas fa-sign-out-alt"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-area">
+        <div class="content-box container">
+            <div class="locator">
+                <!-- <div>Edgar</div>
+                <i class="fas fa-chevron-right"></i>
+                <div>Homepage</div> -->
+            </div>
+            <div class="main">
+                <!-- Your main content here -->
+                <div class="row journals-card-groups">
+                    <!-- card 4 -->
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

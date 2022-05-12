@@ -1,0 +1,9 @@
+@import url(../navbar/index.css);
+
+.content-area {
+    overflow-y: scroll !important;
+}
+
+.small-card {
+    width: 300px;
+}

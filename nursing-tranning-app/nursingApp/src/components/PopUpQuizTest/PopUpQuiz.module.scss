@@ -1,0 +1,62 @@
+.modal {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+}
+
+.answer {
+    height: 100%;
+    width: 80vw;
+    word-wrap: break-word;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.MC {
+    padding: 2em;
+}
+
+.head-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-container {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.answer-container {
+    height: 6em;
+    margin-bottom: 2em;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.tail-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: 19em;
+}
+
+.resultCard {
+    position: fixed;
+    top: 40vh;
+    padding: 1em;
+    width: 80vw;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.closeBtn {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}

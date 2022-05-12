@@ -1,0 +1,117 @@
+image: node:slim
+
+stages:
+  - server-testing
+  - react-testing
+  - server-build
+  - react-build
+  - server-deploy
+  - react-deploy
+
+variables:
+  POSTGRES_DB: nursing_test
+  POSTGRES_USER: nursing_test
+  POSTGRES_PASSWORD: nursing_test
+  REPOSITORY_URL: kevinchancty/nursing-app
+  IMAGE_TAG: api
+
+# 1
+server-testing:
+  only:
+  - production
+  stage: server-testing
+  services:
+    - postgres:latest
+  variables:
+    POSTGRES_HOST: postgres 
+  before_script:
+    - cd Api
+    - yarn install
+    - yarn knex migrate:latest --env testing
+    - yarn knex seed:run --env testing
+  script:
+    - yarn jest
+
+# 2
+react-testing:
+  only:
+  - production
+  stage: react-testing
+  before_script:
+    - cd nursingApp
+    - yarn install
+  script:
+    - CI=true yarn test
+
+# 3
+server-build:
+  image: "docker:18.09"
+  stage: server-build
+  services:
+    - docker:18.09.7-dind
+  before_script:
+    - docker login -u ${DOCKER_HUB_USERNAME} -p ${DOCKER_HUB_PASSWORD}
+  only:
+    - production
+  script:
+    - cd Api/
+    - docker build  -t nursing-app-api -f Dockerfile .
+    - docker tag nursing-app-api:latest $REPOSITORY_URL:$IMAGE_TAG
+    - docker push $REPOSITORY_URL:$IMAGE_TAG
+
+# 4
+react-build:
+  image: node:lts
+  stage: react-build
+  before_script:
+    - cd nursingApp/
+    - echo "REACT_APP_NURSING_SERVER=https://api.kevincty.com" > .env
+  only:
+    - production
+  script:
+    - yarn install
+    - yarn build
+  artifacts:
+    paths:
+      - nursingApp/build
+# 5
+server-deploy:
+  before_script:
+    - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+    - eval $(ssh-agent -s)
+    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' > private.pem
+    - chmod 400 private.pem
+    - ssh-add private.pem > /dev/null
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    - ssh-keyscan -H  ${SERVER_HOSTNAME} > ~/.ssh/known_hosts
+    - chmod 644 ~/.ssh/known_hosts
+  stage: server-deploy
+  only: 
+    - production
+  script:
+    # scp?
+    - 'scp docker-compose.yml ubuntu@${SERVER_HOSTNAME}:'
+    - ssh ubuntu@${SERVER_HOSTNAME} 
+        "docker login -u $DOCKER_HUB_USERNAME -p $DOCKER_HUB_PASSWORD &&
+          docker-compose stop &&
+          docker-compose pull &&
+          docker-compose up -d"
+
+# docker images | grep none | awk '{print $3}' | xargs -I {} docker rmi {} &&
+# 6
+react-deploy:
+  image: "python:3.6"
+  stage: react-deploy
+  before_script:
+    - pip install awscli
+  dependencies:
+    - react-build
+  only:
+    - production
+  script:
+    # awscli configure?
+    - aws s3 sync nursingApp/build s3://${BUCKET_NAME}
+    - aws cloudfront create-invalidation --distribution-id ${DISTRIBUTION_ID} --path '/*/'
+    - aws cloudfront create-invalidation --distribution-id ${DISTRIBUTION_ID} --path '/*'
+    - aws cloudfront create-invalidation --distribution-id ${DISTRIBUTION_ID} --path '/index.html'

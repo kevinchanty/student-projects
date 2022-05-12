@@ -1,0 +1,105 @@
+:root{
+    --donki-yellow: rgb(240, 190, 68)
+}
+
+body{   
+    font-family: "San Francisco Display Medium", Arial, sans-serif, "Hiragino Kaku Gothic Pro W3", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+
+a{
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+}
+
+#nav_bar{
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    color: var(--donki-yellow);
+    justify-content: space-between;
+    padding: 0px 50px;
+    height: 10vh;
+    align-items: center;
+}
+
+#nav_bar_right{
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.nav_bar_right_item{
+    padding: 0 20px;
+    border-left: 2px solid rgb(65,65,65);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.nav_bar_right_item:hover{
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    background-color: var(--donki-yellow);
+    color: black;
+}
+
+#reinforcement_image{
+    height: 90vh;
+    width: 100vw;
+    background-image: url('./src/reinforcement_learning.jpeg');
+    background-position: center;
+    background-size: cover;
+    color: white;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#agar_image{
+    height: 90vh;
+    width: 100vw;
+    background-image: url('./src/agar.jpg');
+    background-position: center;
+    background-size: cover;
+    color: white;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#reinforcement_image{
+    height: 90vh;
+    width: 100vw;
+    background-image: url('./src/reinforcement_learning.jpeg');
+    background-position: center;
+    background-size: cover;
+    color: white;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header{
+    margin: 50px;
+    padding: 20px 20px;
+    background-color: black;
+    color: var(--donki-yellow);
+    font-size: 50px;
+}
+
+.content{
+    margin: 10px 50px;
+    border-bottom: dotted 1px rgb(65,65,65);
+    padding: 0 20px 20px 20px;
+    font-size: 30px;
+    line-height: 60px;
+}
+
+.image-container{
+    display: flex;
+    justify-content: center;
+}

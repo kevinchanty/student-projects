@@ -1,0 +1,20 @@
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.question {
+    text-align: center;
+    height: 8em;
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 20vh;
+    bottom: 0;
+    width: 100vw;
+    z-index: 10000;
+}

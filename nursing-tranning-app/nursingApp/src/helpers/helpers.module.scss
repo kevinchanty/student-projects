@@ -1,0 +1,76 @@
+.Center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.End{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.Start{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.NoShadow {
+    box-shadow: none;
+}
+
+.FullWidth {
+    width: 100%;
+}
+
+.Thumbnail {
+    --border-radius: 50%;
+    --size : 80px;
+}
+
+.Avatar {
+    --border-radius: 50%;
+    --size : 100px;
+}
+
+.Username {
+    @extend .Center;
+    margin: 10px;
+    color: #921d32;
+    border-bottom: 1px dotted grey;
+    font-size: 1.5em;
+}
+
+ion-row {
+    margin: 0 !important;
+}
+
+.PostIcon {
+    --border-radius: 50%;
+    --size : 30px;
+    margin: 10px 0 10px 10px;
+}
+
+.PostName {
+    margin: 15px;
+    color:#921d32;
+}
+
+.buttonAlign {
+    text-align: center;
+}
+
+.igIcon {
+    --border-radius: 50%;
+    --size : 85px;
+    margin-left: 20px;
+}
+
+.igIconName {
+    margin-left: 20px;
+}
+
+.showButton {
+    text-align: center;
+}

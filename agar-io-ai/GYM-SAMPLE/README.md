@@ -1,0 +1,1 @@
+Simple environment of agar.io game.

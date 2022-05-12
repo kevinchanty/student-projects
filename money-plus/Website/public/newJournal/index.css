@@ -1,0 +1,10 @@
+@import url(../navbar/index.css);
+
+body {
+    background-color: #B0CCD8;
+    font-family: 'Titillium Web';
+}
+
+.main-con{
+    padding-top: 10px;
+}

@@ -1,0 +1,6 @@
+GYM-SAMPLE : V0 - 150x150 - Greyscale
+GYM-V1 : 150x150 image - rgb
+GYM-V2: 9 nearest food's coordinates
+GYM-V3: 5 x 5 vision grid, in 1000 x 1000 vision range
+GYM-V4: 5 x 5 vision grid, in 1000 x 1000 vision range, idle punishment is 0
+GYM-V5: combine v2 and v3

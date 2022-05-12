@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../notification/index.css">
+    <script defer src="https://kit.fontawesome.com/acf2e97ce6.js" crossorigin="anonymous"></script>
+    <script defer src="../notification/index.js"></script>
+    <script defer src="index.js"></script>
+    <title>Nav-bar Test</title>
+</head>
+
+<body>
+    <div class="sidebar active">
+        <div class="logo_content">
+            <div class="logo">
+                <i class="fas fa-wallet"></i>
+                <h1>Money Plus</h1>
+            </div>
+            <i class="fas fa-bars" id="btn""></i>
+        </div>
+        <ul class="nav_list">
+            <li>
+                <a href="#">
+                    <i class="fas fa-search"></i>
+                    <input type="text" name="" value="" placeholder="Search...">
+                </a>
+            </li>
+            
+            <li>
+                <a href="#">
+                    <i class="fas fa-chart-line"></i>
+                    <span class="links_name">Dashboard</span>
+                </a>
+                <span class="tooltip">Dashboard</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-book"></i>
+                    <span class="links_name">Journals</span>
+                </a>
+                <span class="tooltip">Journals</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-money-check-alt"></i>
+                    <span class="links_name">Transactions</span>
+                </a>
+                <span class="tooltip">Transactions</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="far fa-calendar-alt"></i>
+                    <span class="links_name">Calendar</span>
+                </a>
+                <span class="tooltip">Calendar</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-bell"></i>
+                    <span class="links_name">Notifications</span>
+                </a>
+                <span class="tooltip">Notifications</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-gamepad"></i>
+                    <span class="links_name">Game of Life</span>
+                </a>
+                <span class="tooltip">Game of Life</span>
+            </li>
+            <div class="profile_content">
+                <div class="profile">
+                    <div class="profile_details">
+                        <img src="Edgar Gaming.png" alt="">
+                        <div class="name_job">
+                            <div class="name">Edgar</div>
+                            <div class="job">Streamer</div>
+                        </div>
+                    </div>
+                    <i class="fas fa-sign-out-alt" id="log_out"></i>
+                </div>
+            </div>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="noti-cards">
+            <div>
+              <i class="far fa-trash-alt"></i>
+            </div>
+            <div>
+              <div class="tag">Joined New User</div>
+              <div class="title"><b>Registration: Finibus Bonorum et Malorum</b></div>
+              <div class="message">Sed ut perspicaltis unde imnis iste natus error sit voluptatem</div>
+            </div>
+            <div>
+              <i class="far fa-clock"></i>24 Nov 2018 at 9:30p.m.
+            </div>
+          </div>
+    </div>
+</body>
+
+</html>

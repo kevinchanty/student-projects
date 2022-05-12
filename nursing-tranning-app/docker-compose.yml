@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+  nursing-db:
+    image: "postgres:13"
+    environment:
+          POSTGRES_DB: nursing
+    env_file:
+      - .env
+    volumes:
+      - ./pgdata:/var/lib/postgresql/data
+  nursing-api:
+    image: "kevinchancty/nursing-app:api"
+    depends_on:
+      - nursing-db
+    env_file:
+      - .env
+    environment: 
+      NODE_ENV: production
+      POSTGRES_HOST: nursing-db
+    ports:
+      - "3100:3100"
+    volumes:
+     - ./multer-storage:/usr/src/app/public/uploads

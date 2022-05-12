@@ -1,0 +1,47 @@
+body{
+    font-family: 'Titillium Web';
+}
+
+#navBtopper {
+    background-color: #A89F9A!important;
+}
+
+
+.navbar-brand {
+    font-family: 'Titillium Web';
+    color: #ffffff!important;
+    margin-left: 10px;
+    font-size: 35px;
+}
+
+.navbar-light .navbar-toggler {
+    color: #ffffff;
+    border-color: transparent;
+}
+
+.navbar-toggler {
+    padding: .25rem .75rem;
+    font-size: 20px;
+    line-height: 1;
+    background-color: transparent;
+    border: none;
+    border-radius: none;
+    transition: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0;
+}
+.offcanvas-title{
+    color: #2E9BA2;
+    font-family: 'Titillium Web';
+}
+
+.offcanvas {
+    background-color: #B0CCD8;
+    font-family: 'Titillium Web';
+}
+
+.headerTopMargin{
+    height:78.5px;
+}

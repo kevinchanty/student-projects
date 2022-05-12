@@ -1,0 +1,36 @@
+.Center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.HCenter {
+    display: flex;
+    justify-content: center;
+}
+.Camera {
+    @extend .Center;
+    height: 300px;
+    border: 10px dashed #921d32;
+}
+
+.Photo {
+    @extend .Center;
+    height: 300px;
+}
+
+.AddIcon {
+    color: #921d32;
+    height: 35%;
+    width: 35%;
+}
+
+.uploadButton {
+    margin: 20px 0 20px 0;
+    width: 90%;
+}
+
+.newPostCard {
+text-align: center;
+}
+

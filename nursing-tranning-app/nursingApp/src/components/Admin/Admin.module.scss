@@ -1,0 +1,60 @@
+.tab-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1em 0;
+    font-size: 2em;
+    cursor: pointer;
+    user-select: none;
+}
+
+.active-tab {
+    opacity: 1;
+    text-decoration: blue underline solid;
+    color: var(--ion-item-color);
+    transition: 0.5s;
+}
+
+.inactive-tab {
+    opacity: 0.5;
+    text-decoration: none;
+    color: var(--ion-item-color);
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+.question {
+    color: var(--ion-item-color);
+    font-size: 1.8em;
+    user-select: none;
+    cursor: pointer;
+    // width: 97%;
+    // display: flex;
+    // align-items: center;
+    // justify-content: space-between;
+    padding: 1em;
+}
+
+.question-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1em;
+}
+
+#instruction-container {
+    height: auto;
+}
+
+.backgroundAdmin {
+    opacity: 0.5;
+}
+
+.mcFabBtn {
+    position: relative;
+    bottom: -60px;
+}

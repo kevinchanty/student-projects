@@ -1,0 +1,52 @@
+@import url(../navbar/index.css);
+
+body{
+    background-color: #EEF1F7;
+}
+
+.main #noti-container{
+    padding: 10px;
+    background-color: white;
+    min-height: 100vh;
+    border: 1px solid black;
+}
+
+.main .noti-cards{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid grey;
+}
+
+.main .noti-cards>div:first-child{
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main .noti-cards>div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    flex:4;
+}
+.main .noti-cards>div:last-child{
+    flex:2;
+    text-align: end;
+    padding-right: 10px;
+}
+
+.main .noti-cards>div:last-child i{
+    margin-right: 5px;
+}
+
+.main .tag{
+    background-color: #309932;
+    border-radius: 2px;
+    font-size: 14px;
+    width: max-content;
+    padding: 1px 3px;
+}
+
+.main .message{
+    color: rgba(0, 0, 0, 0.808);
+}

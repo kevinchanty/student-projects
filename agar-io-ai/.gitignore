@@ -1,0 +1,10 @@
+__pycache__
+.env
+node_modules
+.ipynb_checkpoints
+Training
+.DS_Store
+ROMS
+HC ROMS
+AI-debug.jpeg
+Vick - Test

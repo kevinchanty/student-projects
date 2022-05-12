@@ -1,0 +1,15 @@
+@import '../navbar/index.css';
+
+#calendar {
+  /* margin-top: 100px; */
+  text-decoration: none;
+  max-height: calc(100%);
+}
+
+table.fc-col-header {
+  background: #9AC6CE;
+}
+
+a {
+  color: #0c3777;
+}

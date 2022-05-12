@@ -1,0 +1,66 @@
+@import url('../navbar/index.css');
+
+body {
+    background-image: url('/download/HDwallpapers.jpg');
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+#signInFormBox{
+    background-color: #ffffffe1;
+    border-radius: 5px;
+    /* position: absolute; */
+    width: 600px;
+    height: 100%;
+    box-shadow: 3px 3px 5px #0a0a0a65;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#topbarMargin {
+    height: 70px;
+}
+
+#relative {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.btn {
+    background-color: #9AC6CE;
+    color: #f3f3ef;
+    border-radius: 5px;
+    width: 350px;
+    padding: 8px;
+    margin: 3px 0px 8px 0px;
+    border: none;
+    font-weight: bold;
+    box-shadow: 2px 2px #7e604a65;
+}
+
+
+select {
+    word-wrap: normal;
+    width: 100%;
+    display: block;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    padding: .375rem .75rem;
+}
+
+#upload-image {
+    background-color: #9AC6CE;
+    color: #f3f3ef;
+    word-wrap: normal;
+    width: 100%;
+    display: block;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    padding: .375rem .75rem;
+}

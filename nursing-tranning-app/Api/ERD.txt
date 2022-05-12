@@ -1,0 +1,124 @@
+#https://erd.surge.sh/
+# Relationship Types
+#  -    - one to one
+#  -<   - one to many
+#  >-   - many to one
+#  >-<  - many to many
+#  -0   - one to zero or one
+#  0-   - zero or one to one
+#  0-0  - zero or one to zero or one
+#  -0<  - one to zero or many
+#  >0-  - zero or many to one
+
+request_record
+---
+id pk
+user_id fk >- users.id
+method text
+path text
+browser text
+version text
+os text
+platform text
+user_agent text
+create_at timestamp
+update_at timestamp
+
+users
+----
+id pk
+username text
+password text
+score integer
+glycemic_index integer
+finished_all_mc boolean
+
+follows
+---
+id pk
+source_user_id fk >- users.id
+target_user_id fk >- users.id
+create_at timestamp
+update_at timestamp
+
+student_posts
+----
+id pk
+image text
+caption text
+rating decimal
+user_id fk >- users.id
+create_at timestamp
+update_at timestamp
+visibility boolean
+
+post_comments
+---
+id pk
+post_id fk >- student_posts.id
+content text
+create_at timestamp
+update_at timestamp
+
+post_images
+---
+id pk
+post_id fk >- student_posts.id
+url text
+
+post_ratings
+---
+id pk
+user_id fk >- users.id
+post_id fk >- student_posts.id
+rating integer
+
+game_records
+----
+id pk
+game_score integer
+user_id fk >- users.id
+update_at timestamp
+create_at timestamp
+
+stock_items
+----
+id pk
+items_name text
+glycemic_index integer
+price integer
+is_gym boolean
+is_supermarket boolean
+description string
+
+purchased_items
+----
+id pk
+purchase_at date
+user_id fk >- users.id
+item_id fk >- stock_items.id
+
+
+questions
+----
+id pk
+content text
+
+
+test_records
+----
+id pk
+user_id fk >- users.id
+question_id fk >- questions.id
+selected_answer fk >- answers.id
+is_active boolean
+is_answered boolean
+question_time timestamp
+answer_time timestamp
+
+answers
+----
+id pk
+question_id fk - questions.id
+content text
+is_correct boolean

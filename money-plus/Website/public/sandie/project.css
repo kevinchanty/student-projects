@@ -1,0 +1,91 @@
+
+h1 {
+    font-family: 'Fraunces', serif;
+    color: #5E514B;
+    text-shadow: #8F7D74 1px 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+body {
+    background-color: rgb(248, 240, 230);
+}
+
+
+#canvas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-label {
+    color: #96501C;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;  
+    background: #E8E1E9;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; 
+    background: #5E514B;
+    cursor: pointer;
+  }
+  
+button {
+    margin: 30px 15px;
+}
+
+button:first-child {
+    margin-left: 0;
+}
+
+.home-key {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+#home-key {
+    background-color: #88718E;
+    color: rgb(248, 240, 230)f;
+    padding: 20px;
+    border-radius: 10% / 50%;
+    font-size: 25px;
+    border: 1px solid #514454;
+    font-family: "Gill Sans", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+.a-link:visited {
+    color: rgb(248, 240, 230);
+}
+
+.a-link:hover {
+    text-decoration-line: none;
+    color: #fff;
+}

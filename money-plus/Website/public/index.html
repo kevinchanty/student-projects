@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="index.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/acf2e97ce6.js" crossorigin="anonymous"></script>
+    <script defer src="index.js"></script>
+    <title>Login</title>
+</head>
+
+<body>
+        
+        <div class="topbar">
+            <div class="logo_content">
+                <div class="logo">
+                    <i class="fas fa-wallet"></i>
+                    <h1>Money Plus</h1>
+                </div>
+            </div>
+        </div>
+
+
+<div class="container" id="topbarMargin"></div>
+
+<div class="containerWrapper">
+    <div class="row">
+        <div class="container" id="loginFormBox">
+        <div class="col">
+        <div class="container" id="msgContainer">
+            <br>
+            <br>
+            <h1>Happy To See You!</h1>
+            <p>Enter your email address and password to view your financial plan.</p>
+        </div>
+    
+    
+        <div id="alert-container"></div>
+        <div class="container" id="login-form">
+        <form action="/login" method='POST' id="login-form">
+        <div>
+            <div class="form-group">
+            <label for="username">
+                <input type="username" name="username" class="form-control" placeholder="Username">
+                <i class="far fa-user"></i>
+            </label>
+            </div>
+
+            <div class="form-group">
+            <label for="password">
+                <input type="password" name="password" class="form-control" placeholder="Password">
+                <i class="fas fa-key"></i>
+            </label>
+            </div>
+
+            <br>
+
+
+            <div class="login-btn-group">
+            <input type="submit" value="Login" class="login-btn">
+            </div>
+            
+            <div class="login-btn-group">
+                <a href="/connect/google"><input type="button" value="Login with Google" class="login-btn"></a>
+                <img src="download/google-color.png" width="25px">
+            
+            </div>
+
+
+            <a href="/newUserReg"><input type="button" value="Create Account" class="newUserReg-btn"></a>
+
+        </div>
+        </form>
+    </div>
+</div>
+    </div>
+<br>
+<br>
+        </div>
+
+</div>
+
+
+<div class="introductionWrapper">
+    <div class="introContainer" id="introduction">
+            <div class="row" id="introductionRow">
+                <div class="introCardBox">
+                    <div class="introCard">
+                        <div class="introPic">
+                        <img src="download/pic/Asset 8@4x.png" height="80px">
+                        </div>
+                        
+                        <div class="container">
+                            <p class="introTitle">Save More</p>
+                            <p class="text">Households with financial plans are 2.5x more likely to save enough for retirement.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="introCardBox">
+                    <div class="introCard">
+                        <div class="introPic">
+                        <img src="download/pic/Asset 11@4x.png" height="80px">
+                    </div>
+
+                        <div class="container">
+                            <p class="introTitle">Reach Goals</p>
+                            <p class="text">Households with financial plans set and reach meaningful goals.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="introCardBox">
+                    <div class="introCard">
+                        <div class="introPic">
+                        <img src="download/pic/Asset 5@4x.png" height="80px">
+                        <img src="download/pic/Asset 9@4x.png" height="80px">
+                    </div>
+                    
+                        <div class="container">
+                            <p class="introTitle">Better Relationships</p>
+                            <p class="text">Individuals with a financial plan have a better relationship with themselves and others.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="introCardBox">
+                    <div class="introCard">
+                        <div class="introPic">
+                        <img src="download/pic/Asset 12@4x.png" height="80px">
+                    </div>
+
+                        <div class="container">
+                            <p class="introTitle">Improve Decisions</p>
+                            <p class="text">Households with financial plans make better financial decisions with confidence.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footerWrapper"></div>
+    </div>
+</div>
+
+
+
+
+</body>
+
+</html>

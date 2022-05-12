@@ -1,0 +1,1 @@
+from agar_v30.envs.agar_v30 import agarv30

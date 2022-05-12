@@ -1,0 +1,30 @@
+@import url('../navbar/index.css');
+
+/* body{
+    background-color: #B0CCD8;
+}; */
+
+/* body>.container{
+    margin-top: 10px;
+}
+ */
+/* .dashboard-cards{
+    border: 1px solid;
+} */
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#dashboard-pic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .chart-pond {
+    padding-left: 0 !important;
+    padding-right:0 !important;
+} */

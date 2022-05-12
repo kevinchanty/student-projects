@@ -1,0 +1,37 @@
+@import '../../helpers/helpers.module.scss';
+
+.Thumbnail {
+    --border-radius: 50%;
+    --size : 100px;
+}
+
+.Username {
+    @extend .Center;
+    margin: 10px;
+    color: #921d32;
+    border-bottom: 1px dotted grey;
+    font-size: 1.5em;
+}
+
+
+.Selected {
+    color: #921d32;
+    border-bottom: 1px solid #921d32;
+}
+
+.DeSelected {
+    color: #921d32;
+}
+
+ion-card-header {
+    padding: 0 !important;
+}
+
+.buttonAlign {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.profilePage {
+    padding: 0;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="project.css" />
+    <title>Game Of Life</title>
+</head>
+
+<body>
+    <header id="header" class="container">
+        <h1>Game of Life</h1>
+    </header>
+    <div class="container slider-container">
+        <p class="form-label">Frame Rate Slider</p>
+        <input type="range" min="10" max="100" class="slider frameRate" id="myRange">
+    </div>
+    <div class="container slider-container">
+        <p class="form-label">Die of Overpopulation</p>
+        <input type="range" min="1" max="8" class="slider overpopulation" id="myRange">
+    </div>
+    <div class="container slider-container">
+        <p class="form-label">Loneliness</p>
+        <input type="range" min="1" max="8" class="slider loneliness" id="myRange">
+    </div>
+    <div class="container slider-container">
+        <p class="form-label">Reproduction</p>
+        <input type="range" min="1" max="8" class="slider reproduction" id="myRange">
+    </div>
+    <div class="container">
+        <button type="button" id="empty" class="btn btn-outline-success">Clear</button>
+        <button type="button" id="reset-game" class="btn btn-outline-success">Reset Game</button>
+        <!-- <button type="button" id="start-game" class="btn btn-primary">Start Game</button> -->
+        <button type="button" id="stop-game" class="btn btn-outline-success">Stop Game</button>
+        <!-- <button type="button" id="switch-mode" class="btn btn-primary">Switch Mode</button> -->
+        <button type="button" id="keyboard-mode" class="btn btn-outline-success">Keyboard Mode</button>
+    </div>
+    <div id='canvas' class="container"></div>
+    <div class="container home-key">
+        <button id="home-key"><a class="a-link" href="homepage.html">
+                Go Back</a></button>
+        <button id="home-key"><a class="a-link" href="/home">
+                Homepage</a></button>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/p5.js"></script>
+    <script src="project.js"></script>
+
+</body>
+
+</html>

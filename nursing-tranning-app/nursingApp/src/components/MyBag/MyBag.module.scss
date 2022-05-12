@@ -1,0 +1,36 @@
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.buttonGroup {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cardGroup {
+    margin-inline: auto;
+}
+
+.gymModal {
+    overflow-y: scroll;
+}
+
+.Selected {
+    color: #921d32;
+    border-bottom: 1px solid #921d32;
+}
+
+.DeSelected {
+    color: #921d32;
+}
+
+.modalText {
+    color: #921d32;
+}
+
+.itemName {
+    text-align: center;
+}

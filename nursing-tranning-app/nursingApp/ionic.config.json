@@ -1,0 +1,7 @@
+{
+  "name": "nursingApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/acf2e97ce6.js" crossorigin="anonymous"></script>
+  <script defer src="index.js"></script>
+  <title>Create New Journal</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-light bg-light fixed-top" id="navBtopper">
+    <div class="container-fluid">
+      <a class="navbar-brand" id="navBlogo" href="#">
+        <i class="fas fa-wallet"></i> Journal</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar">
+        Hello, ! <i class="fas fa-home"></i>
+      </button>
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><i class="fas fa-wallet"></i> Start your Journal today!
+          </h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Your Journal
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                <li><a class="dropdown-item" href="#">Summary</a></li>
+                <li><a class="dropdown-item" href="#">Saving</a></li>
+                <li><a class="dropdown-item" href="#">Assets</a></li>
+                <li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Modules</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Transaction
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                <li><a class="dropdown-item" href="#">Calendar</a></li>
+                <li><a class="dropdown-item" href="#">List</a></li>
+                <li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Report</a>
+            </li>
+          </ul>
+
+
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="headerTopMargin"></div>
+
+  <div class="container main-con">
+    <!-- -->
+
+    <!-- 
+        <div class="row"> 
+          <div class="col-sm-6 col-md-6 col-lg-6">
+          </div>
+
+          <div class="col-sm-6 col-md-6 col-lg-6">
+          <div>
+        </div> -->
+
+
+    <!-- start your content here! -->
+
+    <form action="/journals" method="POST" id="new-journal-form">
+      <h3>Create a New Journal</h3>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" name="name" placeholder="Name for your Journal">
+      </div>
+      <div class="form-group mt-1">
+        <label for="modules">Select Modules</label>
+        <select class="form-control" id="modules" name="modules">
+          <option value="1">Saving</option>
+          <option value="2">Trip</option>
+          <option value="3">Household</option>
+          <option value="4">Business Team</option>
+        </select>
+      </div>
+      <div class="form-group mt-1">
+        <label for="goals">Goals :</label>
+        <textarea class="form-control" id="goals" rows="1" placeholder="I want to achieve..." name="goals"></textarea>
+      </div>
+      <div class="form-group mt-1">
+        <label for="description">Description</label>
+        <textarea class="form-control" id="description" rows="2" name="description"></textarea>
+      </div>
+      <div class="mt-1">
+        <button type="reset" class="btn btn-secondary">Clear</button>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+
+    </form>
+
+  </div>
+
+</body>
+
+</html>

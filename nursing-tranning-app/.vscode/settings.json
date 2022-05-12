@@ -1,0 +1,21 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "nursing_app_dev",
+            "database": "nursing_app_dev",
+            "username": "vickfan",
+            "password": "19941014"
+        }
+    ],
+    "cSpell.words": [
+        "checkmark",
+        "circle",
+        "glycemic",
+        "ionicons",
+        "outline"
+    ]
+}

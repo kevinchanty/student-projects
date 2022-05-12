@@ -1,0 +1,100 @@
+@import '../navbar/index.css';
+
+ .box {
+    display: flex;
+}
+
+#chartContainer {
+    border: 0.5px 0.5px ;
+    justify-content: left;
+    justify-items: left;
+    text-align: center;
+    margin: 20px;
+}
+
+.chartTitle {
+    color: #978E89 ;
+    font-size: 26px;
+    font-weight: 400 ;
+    text-shadow: 0.02em 0.02em #d4cdcd ; 
+}
+
+.figure {
+    font-size: 50px;
+    font-weight: 500;
+    color: #9AC6CE;
+}
+
+.figureText{
+    font-size: 20px;
+    font-weight: 500;
+    color: #9AC6CE;
+}
+
+.saving {
+    height: 300px;
+    border: 0.1em 0.2em 0.1em 0.1em solid rgb(158, 157, 157);
+}
+
+.summary {
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid rgba(0, 0, 0, 0.192); */
+    /* box-shadow: 0.2em 0.2em #86868660; */
+}
+
+.summary-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+.fa-minus {
+    display: flex;
+    position: relative;
+    font-size: 30px;
+    color: #9AC6CE;
+    margin-left: 100%;
+    margin-top: -25%;
+}
+
+.fa-equals {
+    display: flex;
+    position: relative;
+    font-size: 30px;
+    color: #9AC6CE;
+    margin-left: 100%;
+    margin-top: -25%;
+}
+
+.fa-bars {
+    color: #9AC6CE;
+}
+
+.locator{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .locator button {
+    font-size: 5px;
+} */
+
+.btn {
+    background-color: #9AC6CE;
+    color: #f3f3ef;
+    border-radius: 5px;
+    width: 50px;
+    padding: 8px;
+    margin: 3px 0px 8px 0px;
+    border: none;
+    font-weight: bold;
+    box-shadow: 2px 2px #7e604a65;
+}
+
+.btn:hover {
+    background-color: #98cad38e;
+}

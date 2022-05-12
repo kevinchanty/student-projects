@@ -1,0 +1,84 @@
+.board {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.tile {
+    // border: 1px black solid;
+    position: absolute;
+}
+
+.boardImg {
+    background-image: url("../../assets/img/4462656-01.png");
+    overflow: visible;
+}
+
+.diceResult {
+    position: fixed;
+    top: 10em;
+    right: 1em;
+}
+
+.sequenceContainer {
+    display: flex;
+    position: fixed;
+    bottom: 5em;
+}
+
+.slider-container {
+    position: fixed;
+    bottom: 1em;
+    width: 100vw;
+}
+
+.controller {
+    position: fixed;
+    bottom: 5em;
+    right: 1em;
+    z-index: 100;
+}
+
+.dice-container {
+    position: relative;
+    left: 3px;
+}
+
+.board-container {
+    overflow: scroll;
+    overflow-x: scroll;
+    height: 60vh;
+    width: 100vw;
+}
+
+.question-card {
+    position: fixed;
+    top: 3em;
+    width: 90vw;
+    padding: 2em 1em;
+}
+
+.chessFab {
+    display: flex;
+}
+
+// .info-box {
+//     height: 28vh;
+//     width: 100vw;
+//     background-color: white;
+//     text-align: center;
+// }
+
+.roomInfo {
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 150px;
+}
+
+.roomNum {
+    border-bottom: 1px solid #921d32;
+}
+
+.infoMarginBetween {
+    margin-top: 8px;
+}
