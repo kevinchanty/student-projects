@@ -1,6 +1,6 @@
 Nursing Training App
 =================
-
+Tech Stack: React, Express, PostgreSQL, Docker
 ---
 1. Real-time Multiplayer Chess
    - multi player
