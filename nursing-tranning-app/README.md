@@ -1,21 +1,22 @@
-##main feature
+#main feature
+
 ---
-1. chess
+1. Real-time Multiplayer Chess
    - multi player
    - multi room
    - roll dice
    - animation of chess move
    - pop up question
-2. photo feed
+2. Instagram-like Photo Feed
    - upload photos
    - rating
    - commenting
-3. virtual marketplace
+3. Virtual Marketplace
     - basic CRUD
-4. pop up quiz
+4. Pop up quiz
     - timer
     - basic CRUD
-5. admin page
+5. Admin page
    - importing files
    - reviewing analytics
 
